@@ -41,7 +41,36 @@ namespace duljine
                         IzracunataVrijednost.Text = rezultat.ToString();
                         veličina = ListaDuljina.Text;
                     }
+                    switch (veličina)
+                    {
+                        case "m":
+                            Velicina.Text = veličina;
+                            break;
+                        case "km":
+                            Velicina.Text = veličina;
+                            break;
+                        case "mm":
+                            Velicina.Text = veličina;
+                            break;
+                        case "in":
+                            Velicina.Text = veličina;
+                            break;
+                        case "feet":
+                            Velicina.Text = veličina;
+                            break;
+                        case "yard":
+                            Velicina.Text = veličina;
+                            break;
+                        case "mile":
+                            Velicina.Text = veličina;
+                            break;
+                        case "cm":
+                            Velicina.Text = veličina;
+                            break;
 
+
+
+                    }
                 }
                 else
                 {
