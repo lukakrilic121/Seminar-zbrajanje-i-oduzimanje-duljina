@@ -41,7 +41,17 @@ namespace duljine
                         IzracunataVrijednost.Text = rezultat.ToString();
                         veličina = ListaDuljina.Text;
                     }
+
                 }
+                else
+                {
+                    MessageBox.Show("Morate izabrati iste veličine");
                 }
             }
+            else
+            {
+                MessageBox.Show("niste stavili duljinu");
+            }
+        }
+    }
 }
