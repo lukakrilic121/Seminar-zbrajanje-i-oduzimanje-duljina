@@ -116,6 +116,7 @@ namespace duljine
 
                     if (ListaOperacije.SelectedIndex == 0)
                     {
+                    
                         prva_duljina*= BrojVeličine;
                         rezultat = prva_duljina + druga_duljina;
                         IzracunataVrijednost.Text = rezultat.ToString();
@@ -124,40 +125,14 @@ namespace duljine
                     }
                     else
                     {
+                        druga_duljina *= BrojVeličine;
                         rezultat = prva_duljina - druga_duljina;
                         IzracunataVrijednost.Text = rezultat.ToString();
                         veličina_1 = ListaDuljina.Text;
                     }
-                    switch (veličina_1)
-                    {
-                        case "m":
-                            Velicina.Text = veličina_1;
-                            break;
-                        case "km":
-                            Velicina.Text = veličina_1;
-                            break;
-                        case "mm":
-                            Velicina.Text = veličina_1;
-                            break;
-                        case "in":
-                            Velicina.Text = veličina_1;
-                            break;
-                        case "feet":
-                            Velicina.Text = veličina_1;
-                            break;
-                        case "yard":
-                            Velicina.Text = veličina_1;
-                            break;
-                        case "mile":
-                            Velicina.Text = veličina_1;
-                            break;
-                        case "cm":
-                            Velicina.Text = veličina_1;
-                            break;
+                   
 
-
-
-                    }
+                    
                
             }
             else
