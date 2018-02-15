@@ -203,25 +203,28 @@ namespace duljine
                         druga_duljina*= BrojVeličine;
                         rezultat = prva_duljina + druga_duljina;
                         IzracunataVrijednost.Text = rezultat.ToString();
-                        veličina_1 = ListaDuljina.Text;
-
+                        NazivJedinice.Visible = true;
+                        NazivJedinice.Text = ListaDuljina.Text;
+                       
                     }
                     else
                     {
                        
                         druga_duljina *= BrojVeličine;
 
-                    if (prva_duljina < druga_duljina)
-                    {
+
+                       if (prva_duljina < druga_duljina)
+                       {
                         rezultat = druga_duljina - prva_duljina;
-                    }
-                    else
-                    {
+                       }
+                       else
+                       {
                        rezultat = prva_duljina - druga_duljina;
-                    }
+                       }
                        
                         IzracunataVrijednost.Text = rezultat.ToString();
-                        veličina_1 = ListaDuljina.Text;
+                        NazivJedinice.Visible = true;
+                        NazivJedinice.Text = ListaDuljina.Text;
                     }
                    
 
